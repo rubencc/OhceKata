@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\IOhceResult.cs" />
+    <Compile Include="Business\OhceResult.cs" />
+    <Compile Include="Business\Strategies\IOhceStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
