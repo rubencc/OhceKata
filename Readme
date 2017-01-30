@@ -1,0 +1,16 @@
+Objetivo: 
+Usar los patrones “strategy” y “template”. Crear un diseño basado en SOLID y buenas prácticas.
+Instrucciones: 
+
+1.	Recibirá mediante línea de comando una sola palabra que solo podrá contener caracteres [a-zA-Z].
+2.	La palabra se mostrara a la salida invertida. 
+3.	Si la palabra tiene un número par de letras mostrara antes de la palabra invertida el texto “PAR –“.
+4.	Si la palabra tiene un número impar de letras mostrara antes de la palabra invertida el texto “IMPAR –“.
+5.	Si la palabra es un palíndromo se mostrara antes de la palabra introducida el texto “Wow!”.
+6.	Si el minuto en el que se introduce el texto es divisible entre dos se mostrara la hora después de la palabra invertida/introducida. 
+7.	Crear un mecanismo para generar estadísticas de uso
+      o	Cuántas veces se usa. 
+      o	Cuántos palíndromos se envían a la consola. 
+      o	Recuento de letras usado.
+Primera sesión: Puntos 1 a 6.
+Segunda sesión: Punto 7.
