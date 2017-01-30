@@ -24,15 +24,22 @@ namespace OhceConsole
             //Example
             //var instance lifescope.Resolve<IInterface>();
 
+            IInverter inverter = lifescope.Resolve<IInverter>();
+
             Console.WriteLine("Welcome to Ohce Kata");
             Console.WriteLine("Write a word or q to quit");
+            Console.WriteLine();
 
             string input = Console.ReadLine();
 
             while (input != "q")
             {
+                Console.WriteLine(inverter.Transform(input));
+
                 Console.WriteLine();
+                Console.WriteLine("Write a word or q to quit");
                 input = Console.ReadLine();
+                Console.WriteLine();
             }
         }
     }

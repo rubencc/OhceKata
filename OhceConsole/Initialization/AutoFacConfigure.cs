@@ -14,7 +14,12 @@ namespace OhceConsole
 
         public void Configure()
         {
-            //Configure IoC
+            this.container.RegisterType<Inverter>().As<IInverter>();
+            this.container.RegisterType<StandarStrategy>().As<IInverterStrategy>();
+            this.container.RegisterType<PalindromeStrategy>().As<IInverterStrategy>();
+            this.container.RegisterType<EvenStrategy>().As<IInverterStrategy>();
+            this.container.RegisterType<NotEvenStrategy>().As<IInverterStrategy>();
+            this.container.RegisterType<MinStrategy>().As<IInverterStrategy>();
         }
     }
 }

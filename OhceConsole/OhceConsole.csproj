@@ -47,6 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\IInverter.cs" />
+    <Compile Include="Business\Inverter.cs" />
+    <Compile Include="Business\Strategies\IInverterStrategy.cs" />
+    <Compile Include="Business\Strategies\InverterTemplate.cs" />
+    <Compile Include="Business\Strategies\MinStrategy.cs" />
+    <Compile Include="Business\Strategies\NotEvenStrategy.cs" />
+    <Compile Include="Business\Strategies\EvenStrategy.cs" />
+    <Compile Include="Business\Strategies\PalindromeStrategy.cs" />
+    <Compile Include="Business\Strategies\StandarStrategy.cs" />
     <Compile Include="Initialization\AutoFacConfigure.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,9 +70,7 @@
       <Name>IoCConfiguration</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Business\Strategies\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
